@@ -1,0 +1,146 @@
+Bootstrap Colors
+==============================================
+danger
+warning
+primary
+secondary
+info
+success
+dark
+light
+white
+==============================================
+background
+bg-colorname
+bg-danger
+bg-warning
+bg-dark
+bg-primary
+bg-info
+bg-success
+bh-white
+bg-light
+bg-danger
+=========================
+color:red; =>text-xolorname
+text-transform => text-uppercase|test-lowercase|text-capitalize
+=======================
+h1=>h6
+=========================================
+text-bg-colorname(for light back dark text and for dark bg light text)
+text-bg-dark
+text-bg-info
+text-bg-warning
+===============
+font-size => fs-(1-5)
+fs-1
+fs-2
+fs-3
+fs-4
+fs-5
+=====================
+text-align=>
+
+left =>BSV4 => text-left        BSV5 =>text-start
+right =>BSV4 => text-right       BSV5 => text-end
+center =>BSV4 & BSV5=> text-center
+==================================
+Margin(for outer space of box)
+m-(0-5) => top , bottom ,left,right
+m-0
+m-1
+m-2
+m-3
+m-4
+m-5
+===========================
+margin-top => mt-(0-5)
+margin-bottom => mb-(0-5)
+margin-left => BSV-4 ml-(0-5)| BSV5  ms-(0-5)
+margin-right =>  BSV4 mr-(0-5)| BSV5  me-(0-5)
+margin left and right => mx-(0-5)
+margin top and bottom => my-(0-5)
+margin:0px auto;  =. mx-auto
+===========================================
+padding => p-(0-5) => top ,bottom, left , right
+padding-top => pt-(0-5)
+padding-bottom => pb(0-5)
+padding-left => BSV-4 pl-(0-5)| BSV5  ps-(0-5)
+padding-right =>  BSV4 pr-(0-5)| BSV5  pe-(0-5)
+padding -right and left => px-(0-5)
+padding-top and padding-bottom => py-(0-5)
+========================
+BSV4    =>img-responsive
+BSV5 =>img-fluid|img-thumbnail;
+==================================
+btn btn-colorname 
+btn btn-danger
+btn btn-warning
+btn btn-outline-colorname
+btn btn-outline-danger
+btn btn-outline-warning
+btn btn-outline-success
+btn-sm
+btn-lg
+=========================================================
+form-control
+font-weight => fw 
+========================================================
+Bootstrap alert
+
+alert alert-colorname
+alert alert-success
+alert alert-danger
+alert alert-warning
+alert alert-info
+alert alert-primary
+============================================
+width => w-n
+w-100 => 100% width
+w-75 => 75% width
+w-50 => 50 width
+w-25 => 25% width
+=======================================================
+grid division
+container ke andr direct no column  
+row => parent
+(each row has 12  column)
+col=>each
+row ka child row nhi hoga
+col ke child col nhi hoga
+col ke andr content likhte hain
+========================================
+container =>  left right se space
+container-fluid => no such space
+==========================================
+col-sm-12 (display ke hisab se breaking point here sm -small)
+col-md-12
+col-lg-12
+col-xl-12
+col-xxl-12
+======================================
+border-radius => rounded-(0-5)
+rounded-pill
+rounded-circle
+rounded-top
+rounded-start
+rounded-end
+rounded-bottom
+===========================
+box-shadow=> shadow
+shadow-sm
+shadow-lg
+=========================
+<div class ="inout-group">
+<b class="input-group-text"></b>
+<input type="text" placeholder="User" class="form-control"/>
+</div>
+=======================================
+modal
+ data-bs-toggle="modal" => on click opening of modal
+ data-bs-target="#exampleModal => id of modal with #(#name)
+ data-bs-dismiss="modal" => provide x option to cut the modal
+
+
+
+

@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <style>
+        input {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            border: 5px groove plum;
+            background: plum;
+            font-size: 22px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <img src="images/off.webp" id="img" />
+        <br />
+        <input type="button" value="ON" id="btn" height="200px" onclick="demo()">
+    </center>
+    <script>
+        function demo() {
+            var im = document.getElementById("img")
+            var b = document.getElementById("btn")
+            if (b.value == "ON") {
+                b.value = "OFF"
+                im.src = "images/On.webp"
+                b.style.background = "yellowgreen"
+            }
+            else
+            {
+                b.value = "ON"
+                im.src = "images/off.webp"
+                b.style.background = "red"
+            }
+
+        }
+    </script>
+</body>
+
+</html>

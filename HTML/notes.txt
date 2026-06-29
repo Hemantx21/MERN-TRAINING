@@ -1,0 +1,184 @@
+<tagname attribute1 =" value" <space> attribute2=" value"  </tagname>
+
+<tagname attribute= "value"/>
+=====================================
+<body bgcolor = 'red' background ="abc.jpg">    
+</body>
+===========================================
+<font></font>
+color
+size
+face
+===============================================
+Character Entities
+
+&entity;
+&copy;
+&reg;
+&uarr;
+&darr;
+&larr;
+&rarr;
+&harr;
+&varr;
+&nbsp;
+------------------------------------------------------------
+<marquee></marquee>
+attribute of marquee tagname
+direction=> left(default)|right|up|down
+behavious => scroll(default)|side|alternate(bidirectional)
+scrollamount => number (speed management)
+bgcolor => for background color
+onmouseover => stop()
+onmouseleave => start()
+hspace => for left and right outerspace
+vspace => for top and bottom outer space
+loop => loop
+---------------------------------------------------------------
+<img/>
+src => location / name.ext
+alt 
+title
+height
+width
+============================================
+<video></video>
+<audio></audio>
+src
+control(mute,umnute.,pause)
+muted
+autoplay
+poster(not apploicable for audio)
+height 
+width
+---------------------------------------------------------------
+WEB FORM| FORM control
+
+Tags Related to  web form
+input 
+select
+option
+optgroup
+textarea
+button
+fieldset
+legend
+form tag
+
+==================================================
+attribute realted to web forms
+
+type,name,placeholder,required,checked,selected,autofocus,value,min,max,rows,cols,
+multiple,for,tabindex,disbaled,readonly
+accept => File Extension | video/*|audio/*|image/*
+autocompltete,method  => get/poster
+enctype =>text/plain(default) | multipart/form data
+=================================================
+Method 
+
+Get/poster
+
+get
+===
+1. less secure
+2.it is used for small forms 
+3.URL length limit available (2048 char)
+4. file upload is not possible here.
+
+
+
+Post
+========
+1. more secure
+2. it is used for big forms
+3. No Url length limit is available
+4. file upload is possible here.
+
+
+===============================================================
+file upload =>
+1. Method =. Post
+2.enctype => multipart/form-data 
+enctype => text/plain |multipart/form-data
+---------------------------------------------------------------
+CSS stand Cascading Style Sheet.
+CSS was developed by Hakon wium Lie in 1994
+CSS describe how html tag are to be display on web browser.
+
+Types oF CSS
+1. Internal CSS
+2. External CSS
+3.Inline CSS
+--------------------------------------------------------------------------------
+1. Internal CSS
+<style>
+selector
+{
+    property:value;
+    property:value;
+    or 
+    property:value;property:value;
+}
+</style>
+
+selector
+---------------------------------------------
+selector is used to select html tag to apply CSS.
+Types of selector
+==============1
+1. Tag/Element selector
+2. Id selector
+3. Class selector
+4. Group selector
+5. Universal selector
+6. Pseudo selector
+7. Child  selector
+8. Odd/Even selector
+9. nth-child selector
+etc.
+=============================================================   
+border-width
+border-style:solid|double|dashed|dotted|groove
+border-color :red;
+short hand rule
+border:width style color;
+border: 10px solid red;
+word-spacing
+line-height
+letter-spacing
+-----------------------------------------------------------
+text-transform: uppercase|lowercase|capitalize;
+writing-mode : horizontal-tb|vertical-lr|vertical-rl
+
+=================================================================
+inline CSS
+<tagname style="property:value;property:value"> </tagname>
+<tagname/>
+
+inline priority>>internal >>external
+!important means it cannot be changed 
+===========================================
+selector:hover;
+{
+    property:value;
+    property:value;
+}
+===================================================
+transition:property time in second,property time in second;
+
+transition:background 2s,color 5s,border 4s
+======================================================
+text-shadow :h v blur color;
+======================================================
+single line ka text agr box ke beech mein lana h to line-height
+ property ki value box ke height ke barabaar then it will come tocenter
+=========================================================================
+box-shadow: h v blur spread color side(side=>inset)
+========================================================================================
+box-sizing :content-box(default)| border-box (padding,border)
+===================================================================
+transform:rotate|scale |scaleX|scaleY|translate|translateX|translateY|Skew|SkewX|SkewY
+transform: ro
+ztate(10deg)
+==========================================================================================
+BOOOTSTRAP

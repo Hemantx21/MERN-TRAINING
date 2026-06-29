@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <style>
+            img{
+                height:100px;
+                width:100px;
+                border: 4px solid black;
+                border-radius: 5px;
+                box-shadow: 0px 0px 5px black inset;
+
+            }
+        </style>
+    </head>
+    <body>
+        <img src="images/1.jpg" alt="abc" id="im1"><br/>
+        <img src="images/2.jpg" alt="bcd" id="im2"><br/>
+        <img src="images/3.jpg" alt="aabc" id="im3"><br/>
+        <img src="images/b.jpg" alt="a" id="im4"><br/>
+        <img src="images/bg.jpg" alt="b" id="im5"><br/>
+        <img src="images/pexels-ludvighedenborg-9881353.jpg" alt="c" id="im6"><br/>
+        <img src="images/pexels-steve-14053647.jpg" alt="d" id="im7"><br/>
+        <img src="images/pexels-steve-29404574.jpg" alt="e" id="im8"><br/>
+        <img src="images/pexels-steve-29506609.jpg" alt="f" id="im9"><br/>
+        <img src="images/2.jpg" alt="g" id="im10">
+        <button onclick="demo()">SWAP</button>
+        <script>
+            
+            function demo(){
+            var img1=document.getElementById("im1")
+            var img2=document.getElementById("im2")
+            var img3=document.getElementById("im3")
+            var img4=document.getElementById("im4")
+            var img5=document.getElementById("im5")
+            var img6=document.getElementById("im6")
+            var img7=document.getElementById("im7")
+            var img8=document.getElementById("im8")
+            var img9=document.getElementById("im9")
+            var img10=document.getElementById("im10")
+            img1.src=img2.src
+            img2.src=img3.src
+            img3.src=img4.src
+            img4.src=img5.src
+            img5.src=img6.src
+            img6.src=img7.src
+            img7.src=img8.src
+            img8.src=img9.src
+            img9.src=img10.src
+            img10.src=img1.src
+           
+            
+            }
+           
+    
+           
+        </script>
+    </body>
+</html>

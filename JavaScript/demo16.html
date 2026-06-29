@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <style>
+            div{
+                height:150px;
+                width:150px;
+                border:10px solid red;
+                float: left;
+                margin:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="dv1">
+            <p> This is paragraph</p>
+            <b>This is B Tag</b><br/>
+            Techpile Technology <bt/>
+            <u>This is U Tag</u>
+        </div>
+        <div id="dv2"></div>
+        <button onclick="myfun()">Click Me</button>
+        <script>
+            function myfun()
+            {
+                var d1 = document.getElementById("dv1")
+                var d2 = document.getElementById("dv2")
+              //  alert(d1.innerText)
+              //  alert(d1.innerHTML)
+                //alert(d1.outerHTML)
+                var data = d1.innerHTML
+               // d2.innerHTML=" <b>Techpile</b> <u>Summer Training 2026 </u>"
+               d2.innerHTML=data
+            }
+        </script>
+    </body>
+</html>

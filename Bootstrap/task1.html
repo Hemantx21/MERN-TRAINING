@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        .bg-mycolor {
+            background: linear-gradient(#1b1440, #2d1444) !important;
+        }
+
+        .bg-box {
+            background: rgba(255, 255, 255, .2)
+        }
+
+        .h {
+            min-height: 300px;
+        }
+        .my-border
+        {
+            border: none;
+            border-bottom: 2px solid white !important;
+        }
+        
+    </style>
+
+</head>
+
+<body class="bg-mycolor">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-8 bg-box mx-auto mt-5 h rounded-5 p-5">
+                <div class="text-center text-white fs-2 fw-bold">Event Registration</div>
+                <p class="text-center fw-bold text-white">Register with us to get more details.</p>
+                <div class="text-white fw-bold">Name</div>
+                <div class="row">
+                    <div class="col-6 text-light mb-4" >
+                        
+                        <div class="input-group ">
+                            <i class="input-group-text text-light  bg-transparent my-border rounded-0"><i class="fa-regular fa-user"></i></i>
+                            <input type="text"  class="form-control  bg-transparent my-border rounded-0">
+                        
+                        </div>
+                        First
+                    </div>
+                    <div class="col-6 text-light mb-4">
+                        <input  type="text"  class="form-control  bg-transparent my-border rounded-0">
+                        Last
+                    </div>
+                </div>
+                <div  class="text-white fw-bold"> Email</div>
+                 <div class="input-group mb-4">
+                    <i class="input-group-text text-light bg-transparent my-border rounded-0"><i class="fa-regular fa-envelope"></i></i>
+                    <input type="email"  class="form-control bg-transparent rounded-0 my-border">
+                </div>
+                <div  class="text-white fw-bold"> Phone</div>
+                 <div class="input-group mb-4">
+                    <i class="input-group-text text-light  bg-transparent my-border rounded-0"><i class="fa-solid fa-mobile"></i></i>
+                    <input type="number"  class="form-control bg-transparent rounded-0 my-border">
+                </div>
+                <div  class="text-white fw-bold"> Topic</div>
+                 <div class="input-group mb-4">
+                   <input type="text"  class="form-control bg-transparent rounded-0 my-border">
+                   <select class="bg-transparent text-light my-border"><option></option></select>
+                </div>
+                <div  class="text-white fw-bold"> Preferred Slot</div>
+                 <div class="input-group mb-4">
+                   <input type="number"  class="form-control bg-transparent rounded-0 my-border">
+                   <select class="bg-transparent text-light my-border"><option></option></select>
+                </div>
+                <center><button class="btn btn-danger rounded-5 text-center ">Sign me up</button></center>
+                
+               
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

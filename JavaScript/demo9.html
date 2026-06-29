@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <style>
+            h1{
+                height:200px;
+                width:200px;
+                text-align:center; 
+                line-height: 200px;;
+                background: greenyellow;
+
+            
+        </style>
+        
+    </head>
+    <body>
+        <h1 id="h">Techpile</h1>
+        <button onclick="demo()">Click Me</button>
+        <script>
+            function demo()
+            {
+               var x= window.confirm(" Are u sure want to style on h1")
+               //alert(x)
+               var y= document.getElementById("h")
+               if (x==true)
+               {
+                y.style.background="red"
+                y.style.color="white"
+                y.style.transform="rotate(300deg)"
+                y.style.transition= "all 1s"
+                
+               }
+               
+            }
+        </script>
+    </body>
+</html>

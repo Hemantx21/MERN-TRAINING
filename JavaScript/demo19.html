@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <style>
+            #box
+            {
+                min-height: 200px;
+                width: 300px;
+                padding: 35px;
+                box-sizing:border-box;
+                background: whitesmoke;
+                border-radius: 10px;
+                box-shadow: 0px 0px 30px black;
+                margin: 100px auto;
+            }
+            input
+            {
+                width: 100%;
+                background: white;
+                border: none;
+                height: 50px;
+                box-shadow: 0px 0px 10px black inset;
+                border-radius: 10px;
+                padding-left: 15px;
+                box-sizing: border-box;
+            }
+            button{
+                height: 50px;
+                width:100%;
+                background: orange;;
+                border: none;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <div id="box">
+        <input type="text" id="name" placeholder="=Name"/>
+        <p id="msg1"></p>
+        <br/>
+        <input type="text" id="mobile" placeholder="Mobile No"/>
+        <p id="msg2"></p>
+        <input type="date" id="dob"/>
+        <p id="msg3"></p>
+        <button onclick="demo()">Print Data</button>
+    </div>
+    <script>
+        function demo()
+        {
+            var t1=document.getElementById("name")
+            var t2=document.getElementById("mobile")
+            var t3=document.getElementById("dob")
+            var m1=document.getElementById("msg1")
+            var m2=document.getElementById("msg2")
+            var m3=document.getElementById("msg3")
+            //m1.innerText=" <b>Name is : <b/>"+t1.value
+            m1.innerHTML=` <b>Name : <b/>${t1.value}`
+            m2.innerHTML=` <b>Mobile No : <b/>${t2.value}`
+            m3.innerHTML=` <b>DOB : <b/>${t3.value}`
+        }
+    </script>
+</html>

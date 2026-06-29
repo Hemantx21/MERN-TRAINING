@@ -1,0 +1,12 @@
+p
+{
+    background: orange;
+    border: 10px groove black;
+    line-height: 30px;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+
+
+}

@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <style>
+            div{
+                height:30px;
+                width:300px;
+                border:5px solid aqua;
+                margin:10px;
+                padding:10px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div1">Hemant</div>
+         <div id="div2">Nitesh</div>
+         <div id="div3">Abhishek</div>
+         <div id="div4">Baljeet</div>
+         <div id="div5">Sumit</div>
+         <div id="div6">Ayush</div>
+         <div id="div7">Mohit</div>
+         <div id="div8">Deepak</div>
+         <div id="div9">Rahul</div>
+         <div id="div10">Aditya</div>
+        <button onclick="demo()">Click Me</button>
+         
+         <script>
+            function demo(){
+            var d1=document.getElementById("div1")
+            var d2=document.getElementById("div2")
+            var d3=document.getElementById("div3")
+            var d4=document.getElementById("div4")
+            var d5=document.getElementById("div5")
+            var d6=document.getElementById("div6")
+            var d7=document.getElementById("div7")
+            var d8=document.getElementById("div8")
+            var d9=document.getElementById("div9")
+            var d10=document.getElementById("div10")
+            d1.innerText=d2.innerText
+            d2.innerText=d3.innerText
+            d3.innerText=d4.innerText
+            d4.innerText=d5.innerText
+            d5.innerText=d6.innerText
+            d6.innerText=d7.innerText
+            d7.innerText=d8.innerText
+            d8.innerText=d9.innerText
+            d9.innerText=d10.innerText
+            d10.innerText=d1.innerText
+            }
+           
+            
+         </script>
+
+    </body>
+</html>

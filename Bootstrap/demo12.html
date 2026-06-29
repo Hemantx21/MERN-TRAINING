@@ -1,0 +1,54 @@
+<html>
+    <head>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   
+    </head>
+    <style>
+        .form-control
+        {
+            height:50px;
+        }
+    </style>
+    <body>
+<!--Start Modal-->
+<!-- Button trigger modal -->
+
+<a href="#" data-bs-toggle="modal" data-bs-target="#abc">Login</a>
+
+<!-- Modal -->
+<div class="modal fade" id="abc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      <div class="modal-body  p-5">
+        <div class="text-center fs-2">Login<b class="text-warning">Form</b></div>
+        <a href="#" class="text-danger fs-3 float-end" data-bs-dismiss="modal" >X</a>
+        <!--
+        <img src="images/bg.jpg" class="img-fluid"/>
+        -->
+        <div class="input-group mb-2">
+            <i class="input-group-text bg-warning text-light">
+                <i class="fa-solid fa-user"></i>
+            </i>
+            <input type="text" placeholder="Userid" class="form-control">
+        </div>
+        <div class="input-group mb-2">
+            <i class="input-group-text bg-warning text-light">
+               <i class="fa-solid fa-key"></i>
+            </i>
+            <input type="password" placeholder="password" class="form-control">
+        </div>
+        <button class="btn btn-warning form-control ">Login</button>
+
+        
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!--End Modal-->
+<script src="js/bootstrap.bundle.js"></script>
+    </body>
+</html>

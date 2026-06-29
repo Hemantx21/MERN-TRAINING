@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <style>
+        #box {
+            min-height: 200px;
+            width:   500px;
+            padding: 35px;
+            box-sizing: border-box;
+            background: whitesmoke;
+            border-radius: 10px;
+            box-shadow: 0px 0px 30px black;
+            margin: 100px auto;
+        }
+
+        input {
+            width: 100%;
+            background: yellow;
+            border: none;
+            height: 50px;
+         
+            border-radius: 6px;
+            padding-left: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            height: 50px;
+            width: 100%;
+            background: plum;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<div id="box">
+    <input type="text" id="name" placeholder="Name" />
+    <p id="msg1"></p>
+    <br />
+    <input type="date" id="dob" />
+    <p id="msg2"></p>
+    <input type="email" id="Email" placeholder="EmailId" />
+    <p id="msg3"></p>
+    <input type="text" id="mobile" placeholder="Mobile No" />
+    <p id="msg4"></p>
+    <input type="text" id="college" placeholder="college name" />
+    <p id="msg5"></p>
+    <input type="text" id="course" placeholder="course" />
+    <p id="msg6"></p>
+    <input type="text" id="year" placeholder="Year" />
+    <p id="msg7"></p>
+    <input type="text" id="branch" placeholder="Branch" />
+    <p id="msg8"></p>
+    <input type="text" id="technology" placeholder="technology" />
+    <p id="msg9"></p>
+    <input type="number" id="amount" placeholder="Amount" />
+    <p id="msg10"></p>
+    <button onclick="demo()">Print Data</button>
+</div>
+<script>
+    function demo() {
+        var t1 = document.getElementById("name")
+        var t2 = document.getElementById("dob")
+        var t3 = document.getElementById("mobile")
+        var t4 = document.getElementById("Email")
+        var t5 = document.getElementById("college")
+        var t6 = document.getElementById("course")
+        var t7 = document.getElementById("year")
+        var t8 = document.getElementById("branch")
+        var t9 = document.getElementById("technology")
+        var t10 = document.getElementById("amount")
+
+
+        var m1 = document.getElementById("msg1")
+        var m2 = document.getElementById("msg2")
+        var m3 = document.getElementById("msg3")
+        var m4 = document.getElementById("msg4")
+        var m5 = document.getElementById("msg5")
+        var m6 = document.getElementById("msg6")
+        var m7 = document.getElementById("msg7")
+        var m8 = document.getElementById("msg8")
+        var m9 = document.getElementById("msg9")
+        var m10 = document.getElementById("msg10")
+        //m1.innerText=" <b>Name is : <b/>"+t1.value
+        m1.innerHTML = ` <b>Name : <b/>${t1.value}`
+        m2.innerHTML = ` <b>DOB : <b/>${t2.value}`
+        m3.innerHTML = ` <b>Email : <b/>${t3.value}`
+        m4.innerHTML = ` <b>Mobile : <b/>${t4.value}`
+        m5.innerHTML = ` <b>College : <b/>${t5.value}`
+        m6.innerHTML = ` <b>Course : <b/>${t6.value}`
+        m7.innerHTML = ` <b>Year : <b/>${t7.value}`
+        m8.innerHTML = ` <b>Branch : <b/>${t8.value}`
+        m9.innerHTML = ` <b>Technology : <b/>${t9.value}`
+        m10.innerHTML = ` <b>Amount : <b/>${t10.value}`
+       
+    }
+</script>
+
+</html>
