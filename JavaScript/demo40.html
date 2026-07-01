@@ -1,0 +1,41 @@
+<html>
+
+<head></head>
+
+<body>
+    <select onchange="demo()">
+        <option>--Select Course--</option>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JavaScript</option>
+        <option> JQuery</option>
+        <option>Bootstrap</option>
+    </select>
+    <input type="number" />
+
+    <script>
+        function demo() {
+            var ddl = document.querySelector("select")
+            var i = document.querySelector("input")
+            var v = ddl.value
+            if (v == "HTML") {
+                i.value = "1000"
+            }
+            else if (v == "CSS") {
+                i.value = "2000"
+            }
+            else if (v == "JavaScript") {
+                i.value = "3000"
+            }
+            else if (v == "JQuery") {
+                i.value = "4000"
+            }
+            else if (v == "BootStrap") {
+                i.value = "5000"
+            }
+
+        }
+    </script>
+</body>
+
+</html>

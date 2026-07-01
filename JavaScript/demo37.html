@@ -1,0 +1,30 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <p></p>
+    <button onclick="demo()">Click</button>
+    <script>
+        function demo()
+        {
+            var p = document.querySelector("p")
+            
+            var arr = ["HTML", "CSS", "JS", "JQUERY"]
+            var res="<select>"
+            for (var data of arr) {
+              res=res+"<option>"+data+"</option>"
+              //alert(res)
+    
+            }
+            res=res+"/select>"
+            p.innerHTML=res
+
+        }
+
+    </script>
+</body>
+
+</html>
