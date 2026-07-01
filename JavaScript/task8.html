@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <style>
+            input{
+                height:70px;
+                width:200px;
+                border: 6px solid aqua;
+                border-radius: 10px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <input type="text" id="txt1">
+        <input type="text" id="txt2">
+        <button onclick="demo()">Click </button>
+        <script>
+            function demo()
+            {
+                var t1=document.getElementById("txt1")
+                var t2=document.getElementById("txt2")
+                x=t1.value;
+                y=t2.value;
+                t1.value=y
+                t2.value=x
+
+            }
+
+        </script>
+    </body>
+</html>

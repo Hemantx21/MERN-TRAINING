@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+            div{
+                height:100px;
+                width:100px;
+                border-radius: 50%;
+                float: left;
+                margin:50px;
+            }
+            #div1
+            {
+                border:10px solid black;
+            }
+            #div2
+            {
+                border:10px solid aqua;
+            }
+        </style>
+    </head>
+    <body>
+         <div id="div1" style="border:10px solid black;"></div>
+        <div id="div2" style="border:10px solid aqua;"></div>
+        <button onclick="demo()" style="margin:100px" >Swap</button>
+        <script>
+            function demo()
+            {
+                var d1=document.getElementById("div1")
+                var d2=document.getElementById("div2")
+                var x=d1.style.borderColor;
+                d1.style.borderColor=d2.style.borderColor 
+                d2.style.borderColor=x
+                
+
+            }
+        </script>
+    </body>
+</html>
