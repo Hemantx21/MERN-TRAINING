@@ -1,0 +1,1 @@
+export const wel=()=>console.log("Welcome");

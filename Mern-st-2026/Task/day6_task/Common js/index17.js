@@ -1,0 +1,5 @@
+const {add,sub,mul,divide}=require("./calculator.js")
+console.log(add(10,5))
+console.log(sub(10,5))
+console.log(mul(10,5))
+console.log(divide(10,5))
