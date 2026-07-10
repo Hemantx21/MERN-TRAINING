@@ -1,0 +1,97 @@
+#outer{
+
+  min-height: 600px;
+  width:1300px;
+}
+#nav{
+  /* background: yellow; */
+  height: 100px;
+  width:1300px
+}
+#logo{
+  /* background: yellowgreen; */
+  height: 100px;
+  width:200px;
+  float:left;
+  padding-left: 50px;
+  box-sizing: border-box;
+  padding-top: 40px;
+}
+#circle{
+  height:10px;
+  width: 10px;
+  border: 3px solid #4747cd;
+  background: #4747cd;
+  border-radius: 50%;
+  float: left;
+}
+#logotxt{
+  padding-left: 22px;
+  font-weight: bold;
+  font-size: 15px;
+}
+#menu{
+  /* background: pink; */
+  height:100px;
+  width:1100px;
+  float:left;
+   line-height: 62px;
+   padding-left: 550px;
+  box-sizing: border-box;
+  color:#c7c5cf;
+}
+#menu ul 
+{
+  list-style: none;
+ 
+}
+#menu ul li
+{
+  
+  float: left;
+  width:80px;
+  
+ 
+}
+a{
+  text-decoration: none;
+}
+#slide{
+  /* background: palevioletred; */
+  height:500px;
+  width:1300px;
+  box-sizing: border-box;
+}
+#content{
+  padding-top: 110px;
+  padding-left: 50px;
+  /* background: green; */
+  height:500px;
+  width:500px;
+  float:left;
+  box-sizing: border-box;
+}
+#image{
+  /* background: blue; */
+  height:500px;
+  width:800px;
+  float:left;
+}
+button{
+  background: #4747cd;
+  padding: auto;
+  height:35px;
+  width:115px;
+  color:white;
+  border-radius: 20px;
+}
+h1{
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 45px;
+}
+p{
+  color:#b7b7c4;
+}
+
+

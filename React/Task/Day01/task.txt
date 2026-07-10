@@ -1,0 +1,61 @@
+================================================================================
+                    REACT PRACTICE TASKS — CODING QUESTIONS
+                              DAY 1: REACT BASICS
+================================================================================
+
+INSTRUCTIONS
+------------
+
+Assignment for All Students (Mandatory)
+---------------------------------------
+1. Prepare clear and neat handwritten notes.
+2. Write every program yourself. Copy-paste is not allowed.
+3. Complete all tasks before the next class.
+4. Bring your handwritten notes and programs for checking.
+5. Be ready for viva and coding questions in the next class.
+
+STRICT WARNING
+--------------
+- No excuses will be accepted.
+- If you are getting errors, solve them yourself before coming to class.
+- Getting your work done by a friend, volunteer, or anyone else is not allowed.
+- Excuses like "I was getting errors", "I did not understand", or "I did not
+  have time" will not be accepted.
+- Incomplete or copied work may be rejected.
+
+
+================================================================================
+TOPIC 1: REACT PROJECT SETUP — Using Vite
+================================================================================
+
+Task 01
+Install Node.js (LTS version) if not already installed.
+
+Task 02
+Create a new React project using Vite.
+Command: npm create vite@latest
+
+Task 03
+Give your project a name.
+(Example: demo)
+
+Task 04
+Select Framework → React
+
+Task 05
+Select Language → JavaScript
+
+Task 06
+Run these commands and start the project:
+  cd [your-project-name]
+  npm install
+  npm run dev
+
+Task 07
+Open the project in the browser and take a screenshot.
+Upload the screenshot along with your Day 1 and Day 2 tasks.
+
+
+================================================================================
+                              TOTAL TASKS: 7
+================================================================================

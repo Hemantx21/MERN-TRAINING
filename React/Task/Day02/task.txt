@@ -1,0 +1,101 @@
+================================================================================
+                    REACT PRACTICE TASKS — CODING QUESTIONS
+                         DAY 2: REACT PRACTICE
+================================================================================
+
+INSTRUCTIONS
+------------
+
+Assignment for All Students (Mandatory)
+---------------------------------------
+1. Prepare clear and neat handwritten notes.
+2. Write every program yourself. Copy-paste is not allowed.
+3. Complete all tasks before the next class.
+4. Bring your handwritten notes and programs for checking.
+5. Be ready for viva and coding questions in the next class.
+
+STRICT WARNING
+--------------
+- No excuses will be accepted.
+- If you are getting errors, solve them yourself before coming to class.
+- Getting your work done by a friend, volunteer, or anyone else is not allowed.
+- Excuses like "I was getting errors", "I did not understand", or "I did not
+  have time" will not be accepted.
+- Incomplete or copied work may be rejected.
+
+
+================================================================================
+TOPIC 1: PRACTICAL TASKS — Images & CSS in React
+================================================================================
+
+Task 01
+Create a React component. Display an image using the public folder method.
+(Example path: /myimage.jpg)
+
+Task 02
+Create a React component. Display an image using the src folder method.
+(Import the image from the src/assets folder)
+
+Task 03
+Apply Inline CSS in a React component.
+(Use style={{ }} on at least one element)
+
+Task 04
+Apply Internal CSS in a React component.
+(Use a JavaScript styles object)
+
+Task 05
+Apply External CSS in a React component.
+(Create App.css, import it, and use className)
+
+
+================================================================================
+TOPIC 2: MAIN PROJECT — WEBPAGE TASK (MOST IMPORTANT)
+================================================================================
+
+Reference Design File : web-page-task.png
+Image to Use          : use-this-img-in-task.png
+
+Task 06
+Build the webpage shown in web-page-task.png using React.
+
+Your webpage must include:
+
+1. NAVBAR (Top Section)
+   - Left side: Logo area (circle + "YOUR LOGO" text)
+   - Right side: Menu links → Home | About us | Work | Info | Contact us
+   - "Contact us" link should be highlighted or bold
+
+2. HERO SECTION (Main Section)
+   Left Side:
+   - Large heading: "Creative Process"
+   - Short paragraph text (Lorem ipsum or your own text)
+   - Button: "MORE INFO" (blue background, white text, rounded corners)
+
+   Right Side:
+   - Use the image: use-this-img-in-task.png
+   - Place the image in src/assets or the public folder
+   - Image should be properly aligned as shown in the design
+
+3. UI REQUIREMENTS (Strict)
+   - Layout must be clean and balanced
+   - Colors should match the design (blue theme)
+   - Font must be readable
+   - Proper spacing — text should not look cramped
+   - Page should look neat on desktop and mobile
+   - Button, navbar, and heading must be properly aligned
+
+4. CSS
+   - External CSS (App.css) is preferred
+   - Inline or Internal CSS may be used where needed
+
+5. SUBMISSION
+   - Upload the complete React project
+   - Submit Day 1 and Day 2 tasks together
+   - Attach a screenshot of the webpage
+   - Bring handwritten notes to class
+
+
+================================================================================
+                              TOTAL TASKS: 6
+================================================================================
