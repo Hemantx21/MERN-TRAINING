@@ -1,0 +1,199 @@
+================================================================================
+                    REACT PRACTICE TASKS — CODING QUESTIONS
+                         DAY 3: REACT LIBRARIES
+================================================================================
+
+INSTRUCTIONS
+------------
+
+Assignment for All Students (Mandatory)
+---------------------------------------
+1. Prepare clear and neat handwritten notes.
+2. Write every program yourself. Copy-paste is not allowed.
+3. Complete all tasks before the next class.
+4. Bring your handwritten notes and programs for checking.
+5. Be ready for viva and coding questions in the next class.
+6. Install required packages before starting:
+   - sweetalert2
+   - typewriter-effect
+   - react-icons
+   - react-countup
+
+STRICT WARNING
+--------------
+- No excuses will be accepted.
+- If you are getting errors, solve them yourself before coming to class.
+- Getting your work done by a friend, volunteer, or anyone else is not allowed.
+- Excuses like "I was getting errors", "I did not understand", or "I did not
+  have time" will not be accepted.
+- Incomplete or copied work may be rejected.
+
+
+================================================================================
+TOPIC 1: SWEETALERT2 — Alerts in React
+================================================================================
+
+Task 01
+Install sweetalert2 in your React project.
+Command: npm install sweetalert2
+
+Task 02
+Create a button. On click, show a Success alert using SweetAlert2.
+(Message example: "Data saved successfully!")
+
+Task 03
+Create a button. On click, show an Error alert using SweetAlert2.
+(Message example: "Something went wrong!")
+
+Task 04
+Create a button. On click, show an Info alert using SweetAlert2.
+(Message example: "This is an information message.")
+
+Task 05
+Create a button. On click, show a Warning alert using SweetAlert2.
+(Message example: "Please check your input!")
+
+Task 06
+Create a button. On click, show a Question alert using SweetAlert2.
+(Message example: "Are you sure you want to continue?")
+
+
+================================================================================
+TOPIC 2: TYPEWRITER EFFECT — Animated Text
+================================================================================
+
+Task 07
+Install typewriter-effect in your React project.
+Command: npm install typewriter-effect
+
+Task 08
+Create a component. Display "Welcome to React" with typewriter effect.
+
+Task 09
+Create a component. Display your name with typewriter effect.
+
+Task 10
+Create a component. Display two lines with typewriter effect:
+  Line 1: "Hello, Students!"
+  Line 2: "Learning React is fun!"
+
+Task 11
+Create a component. Display a heading with typewriter effect and set typing speed.
+(Hint: Use delay option to control speed)
+
+
+================================================================================
+TOPIC 3: REACT ICONS — Icons in React
+================================================================================
+
+Task 12
+Install react-icons in your React project.
+Command: npm install react-icons
+
+Task 13
+Display a Home icon from react-icons (FaHome) in your component.
+
+Task 14
+Display three icons in one row: User icon, Email icon, and Phone icon.
+(Use icons from react-icons — FaUser, FaEnvelope, FaPhone)
+
+Task 15
+Create a button with an icon and text together.
+(Example: Download icon + "Download" text)
+
+Task 16
+Display social media icons: Facebook, Instagram, and Twitter.
+(Use FaFacebook, FaInstagram, FaTwitter from react-icons)
+
+
+================================================================================
+TOPIC 4: REACT COUNTUP — Animated Numbers
+================================================================================
+
+Task 17
+Install react-countup in your React project.
+Command: npm install react-countup
+
+Task 18
+Create a component. Use CountUp to animate from 0 to 100.
+
+Task 19
+Create a component. Use CountUp to animate from 0 to 500 with a duration of 3 seconds.
+
+
+================================================================================
+TOPIC 5: MAIN PROJECT — WEBPAGE TASK (MOST IMPORTANT)
+================================================================================
+
+Reference Design File : web-page-task.png
+Image to Use          : use-this-img-in-task.png
+
+Task 20
+Build the webpage shown in web-page-task.png using React.
+
+Your webpage must include:
+
+1. NAVBAR (Top Section)
+   - Left side: Logo area (circle + "YOUR LOGO" text)
+   - Right side: Menu links with React Icons:
+     Home | About us | Work | Info | Contact us
+   - Add a suitable icon before each menu item using react-icons
+     (Example: FaHome, FaUser, FaBriefcase, FaInfoCircle, FaEnvelope)
+   - "Contact us" link should be highlighted or bold
+
+2. HERO SECTION (Main Section)
+   Left Side:
+   - Large heading: "Creative Process" (use Typewriter Effect)
+   - Short paragraph text (Lorem ipsum or your own text)
+   - Button: "MORE INFO" (blue background, white text, rounded corners)
+   - On button click, show a SweetAlert2 alert (Success or Info)
+
+   Right Side:
+   - Use the image: use-this-img-in-task.png
+   - Place the image in src/assets or the public folder
+   - Image should be properly aligned as shown in the design
+
+3. COUNTUP SECTION
+   - Add at least one CountUp number on the page
+     (Example: Projects: 100+, Students: 500+, Experience: 5+ years)
+
+4. UI REQUIREMENTS (Strict)
+   - Layout must be clean and balanced
+   - Colors should match the design (blue theme)
+   - Font must be readable
+   - Proper spacing — text should not look cramped
+   - Page should look neat on desktop and mobile
+   - Button, navbar, icons, and heading must be properly aligned
+
+5. CSS
+   - External CSS (App.css) is preferred
+   - Inline or Internal CSS may be used where needed
+
+6. SUBMISSION
+   - Upload the complete React project
+   - Attach a screenshot of the webpage
+   - Bring handwritten notes to class
+
+
+================================================================================
+FILES IN THIS FOLDER
+================================================================================
+
+- task.txt                  → This assignment file
+- web-page-task.png         → Webpage design reference (build like this)
+- use-this-img-in-task.png  → Use this image in the webpage
+
+
+================================================================================
+                              TOTAL TASKS: 20
+================================================================================
+
+NOTE FOR NEXT CLASS   -> 
+-------------------
+Tomorrow we will use this command in PowerShell:
+
+  Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+IMPORTANT: Do NOT run this command today.
+Wait for the next class. We will run it together in class.
+================================================================================

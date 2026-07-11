@@ -1,4 +1,9 @@
 import './App.css'
+import { FaHome } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
+import { FaBriefcase } from "react-icons/fa";
+import { FaInfoCircle } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
 const App = () => {
   return (<>
     <div id="outer">
@@ -9,11 +14,11 @@ const App = () => {
         </div>
         <div id="menu">
           <ul>
-            <li><a href='#'>Home</a> </li>
-            <li><a href='#'>About us</a> </li>
-            <li><a href='#'>Work</a> </li>
-            <li><a href='#'>Info</a> </li>
-            <li><a href='#'><b style={{ color: "#4a47ce" }}>Contact us</b></a> </li>
+            <li>< FaHome size={12} style={{marginRight:"3px"}}/><a href='#'>Home</a> </li>
+            <li><FaUser size={12} style={{marginRight:"3px"}}/><a href='#'>About us</a> </li>
+            <li><FaBriefcase size={12} style={{marginRight:"3px"}}/><a href='#'>Work</a> </li>
+            <li><FaInfoCircle size={12} style={{marginRight:"3px"}}/><a href='#'>Info</a> </li>
+            <li>< FaEnvelope size={12} color='blue' style={{marginRight:"3px"}}/><a href='#'><b style={{ color: "#4a47ce" }}>Contact us</b></a> </li>
           </ul>
         </div>
       </div>
