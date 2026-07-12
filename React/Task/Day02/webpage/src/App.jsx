@@ -1,10 +1,19 @@
 import './App.css'
+import Swal from 'sweetalert2';
+import Typewriter from 'typewriter-effect';
 import { FaHome } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { FaBriefcase } from "react-icons/fa";
 import { FaInfoCircle } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 const App = () => {
+  const demo=()=>{
+    Swal.fire({
+  title: "Good job!",
+  text: "You clicked the button!",
+  icon: "success"
+});
+  }
   return (<>
     <div id="outer">
       <div id="nav">
@@ -24,10 +33,25 @@ const App = () => {
       </div>
       <div id="slide">
         <div id="content">
-          <h1>Creative <br /> Process</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quam expedita recusandae  consectetur.</p>
+           <div id="top"> 
+            <h1>
+              <Typewriter
+              options={{
+                strings: ['Creative <br /> Process'],
+                autoStart: true,
+                loop: true,
+                delay:100,
+              }}
+            />
+            </h1>
+            
+            </div>
+           <div id="bottom">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quam expedita recusandae  consectetur.</p>
           <br />
-          <button>More Info</button>
+          <button onClick={demo}>More Info</button>
+           </div>
+          
         </div>
         <div id="image">
           <img src='/a.png'></img>

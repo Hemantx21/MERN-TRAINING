@@ -36,7 +36,7 @@
   width:1100px;
   float:left;
    line-height: 62px;
-   padding-left: 550px;
+   padding-left: 500px;
   box-sizing: border-box;
   color:#c7c5cf;
 }
@@ -49,7 +49,7 @@
 {
   
   float: left;
-  width:80px;
+  width:90px;
   
  
 }
@@ -72,6 +72,16 @@ a{
   float:left;
   box-sizing: border-box;
 }
+#top{
+height: 120px;
+width:500px;
+/* background: pink; */
+}
+#bottom{
+height: 100px;
+width:500px;
+/* background: yellow; */
+} 
 #image{
   /* background: blue; */
   height:500px;
