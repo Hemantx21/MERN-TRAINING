@@ -1,0 +1,138 @@
+================================================================================
+                    REACT PRACTICE TASKS — CODING QUESTIONS
+                         DAY 4: TABLE DATA BINDING
+================================================================================
+
+INSTRUCTIONS
+------------
+
+Assignment for All Students (Mandatory)
+---------------------------------------
+1. Prepare clear and neat handwritten notes.
+2. Write every program yourself. Copy-paste is not allowed.
+3. Complete all tasks before the next class.
+4. Bring your handwritten notes and programs for checking.
+5. Be ready for viva and coding questions in the next class.
+6. Install Bootstrap before starting:
+   Command: npm install bootstrap
+
+STRICT WARNING
+--------------
+- No excuses will be accepted.
+- If you are getting errors, solve them yourself before coming to class.
+- Getting your work done by a friend, volunteer, or anyone else is not allowed.
+- Excuses like "I was getting errors", "I did not understand", or "I did not
+  have time" will not be accepted.
+- Incomplete or copied work may be rejected.
+
+
+IMPORTANT — READ BEFORE STARTING
+--------------------------------
+- Use the file task_data.js provided in this folder.
+- task_data.js contains ready-made data arrays.
+- Your job is to bind this data to a table in React.
+- Do NOT type data manually in the table.
+- Import data from task_data.js and display it using map().
+- Reference file: table_code.jpeg (follow this table structure)
+
+Example idea:
+  import { users } from "./task_data.js";
+
+  users.map((item) => (
+    <tr>
+      <td>{item.id}</td>
+      <td>{item.name}</td>
+    </tr>
+  ))
+
+
+================================================================================
+TOPIC 1: BIND task_data.js TO TABLE — Users & Products
+================================================================================
+
+Task 01
+Import users from task_data.js and bind it to a Bootstrap table.
+Show columns: ID, Name, Email, Role, Status
+
+Task 02
+Import products from task_data.js and bind it to a Bootstrap table.
+Show columns: ID, Name, Category, Price, Stock
+
+
+================================================================================
+TOPIC 2: BIND task_data.js TO TABLE — Employees & Orders
+================================================================================
+
+Task 03
+Import employees from task_data.js and bind it to a Bootstrap table.
+Show columns: ID, Name, Department, Salary, City
+
+Task 04
+Import orders from task_data.js and bind it to a Bootstrap table.
+Show columns: Order ID, Customer, Amount, Payment, Status
+
+
+================================================================================
+TOPIC 3: BIND task_data.js TO TABLE — Students & Customers
+================================================================================
+
+Task 05
+Import students from task_data.js and bind it to a Bootstrap table.
+Show columns: ID, Name, Class, Marks, Grade
+
+Task 06
+Import customers from task_data.js and bind it to a Bootstrap table.
+Show columns: ID, Name, Phone, City, Loyalty
+
+
+================================================================================
+TOPIC 4: BIND task_data.js TO TABLE — Invoices & Tasks
+================================================================================
+
+Task 07
+Import invoices from task_data.js and bind it to a Bootstrap table.
+Show columns: Invoice No, Client, Total, Due Date, Status
+
+Task 08
+Import tasks from task_data.js and bind it to a Bootstrap table.
+Show columns: ID, Title, Priority, Assignee, Status
+
+
+================================================================================
+TOPIC 5: BIND task_data.js TO TABLE — Payments & Attendance
+================================================================================
+
+Task 09
+Import payments from task_data.js and bind it to a Bootstrap table.
+Show columns: ID, Payer, Method, Amount, Status
+
+Task 10
+Import attendance from task_data.js and bind it to a Bootstrap table.
+Show columns: ID, Employee, Date, Check In, Status
+
+
+================================================================================
+UI REQUIREMENTS (For All Tables)
+================================================================================
+
+1. Use Bootstrap table (className="table")
+2. Use table-dark for table header
+3. Data must come from task_data.js only (bind using map)
+4. Table must look neat and clean
+5. Heading must be centered above each table
+6. Use proper column names in <thead>
+7. All rows must display correctly from the data file
+
+
+================================================================================
+FILES IN THIS FOLDER
+================================================================================
+
+- task.txt         → This assignment file
+- task_data.js     → Data file (bind this data to table)
+- table_code.jpeg  → Table code reference (follow this structure)
+
+
+================================================================================
+                              TOTAL TASKS: 10
+================================================================================

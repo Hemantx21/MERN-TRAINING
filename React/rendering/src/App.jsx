@@ -12,7 +12,7 @@ const data=[
   {
   srno:2,
   name:"Rahul",
-  email:"Rahul@fmail.com@gmail.com",
+  email:"Rahul@gmail.com",
   mobile:9765432108
 }
 ]
@@ -20,8 +20,8 @@ const data=[
 return(
   <>
    <div className="row ">
-    <div className="col-sm-3"></div>
-    <div className="col-sm-6">
+    <div className="col-sm-2"></div>
+    <div className="col-sm-8">
       <h1 className='text-center'>#WelcomeTo<span className='text-danger'>EmergingWorld</span></h1>
       <table className='table mt-3'>
         <thead className='table-dark'>
@@ -35,15 +35,22 @@ return(
         <tbody>
           {data.map((item) => {
             return(<>
-            <tr><td>{item.srno}</td><td>{item.no}</td><td>{item.email}</td><td>{item.mobile}</td></tr>
+            <tr>
+              <td>{item.srno}</td>
+              <td>{item.name}</td>
+              <td>{item.email}</td>
+              <td>{item.mobile}</td>
+            </tr>
 
             </>)
-        }
+          }
+        )
       }
+      
          </tbody>
       </table>
     </div>
-    <div className="col-sm-3"></div>
+    <div className="col-sm-2"></div>
    </div>
   </>
 )
