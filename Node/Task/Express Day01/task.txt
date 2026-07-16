@@ -1,0 +1,25 @@
+================================================================================
+                    NODE PRACTICE TASKS — DAY 1
+                     EXPRESS APPLICATIONS (EASY)
+================================================================================
+
+INSTRUCTIONS
+------------
+1. Complete handwritten notes from class slides (01.png to 20.png).
+2. Create 10 separate Express applications.
+3. Every app must RUN successfully.
+4. Bring notes + all projects for checking.
+5. Be ready for viva.
+
+
+Setup (har project mein):
+-------------------------
+mkdir project-name
+cd project-name
+npm init -y
+npm install express
+
+Run:
+----
+node index.js
+  
