@@ -1,0 +1,264 @@
+================================================================================
+                    NODE PRACTICE TASKS — DAY 5
+              REGISTER / LOGIN + CRUD (try/catch + res.json)
+================================================================================
+
+INSTRUCTIONS
+------------
+1. Complete handwritten notes from class slides.
+2. Create 5 separate Express applications.
+3. Connect every app with MongoDB.
+4. Every response mein res.json() use karo.
+5. Every app must RUN successfully.
+6. Bring notes + all projects for checking.
+
+
+Setup (har project mein):
+-------------------------
+mkdir project-name
+cd project-name
+npm init -y
+npm install express mongoose
+
+
+Run:
+----
+1. Start MongoDB
+2. node index.js
+
+Test with:
+----------
+Postman / Thunder Client
+
+
+Important:
+----------
+- Task 01 & 02 → sab code index.js mein
+- Task 03, 04, 05 → CRUD with try/catch
+- Har response → res.json()
+- Duplicate check → findOne() use karo
+- Status code bhejo (200 / 400)
+
+
+res.json pattern:
+-----------------
+{
+  code: 200,
+  success: true,
+  message: "....",
+  data: ....,
+  error: false
+}
+
+
+================================================================================
+TASK 01 — Register API
+================================================================================
+
+Project: register-api
+Port: 8001
+DB / Collection: authDB / users
+
+Folder:
+-------
+register-api/
+├── package.json
+└── index.js
+
+Fields:
+-------
+name     (String)
+email    (String)
+password (String)
+
+Methods:
+--------
+POST   /register
+
+Rules:
+------
+- Sab code index.js mein likho
+- req.body se name, email, password lo
+- findOne({ email }) se duplicate check karo
+- Agar email already hai → res.json error bhejo
+- Agar nahi hai → save karo + res.json success bhejo
+
+
+--------------------------------------------------------------------------------
+TASK 02 — Login API
+================================================================================
+
+Project: login-api
+Port: 8002
+DB / Collection: authDB / users
+
+Folder:
+-------
+login-api/
+├── package.json
+└── index.js
+
+Fields:
+-------
+email    (String)
+password (String)
+
+Methods:
+--------
+POST   /login
+
+Rules:
+------
+- Sab code index.js mein likho
+- req.body se email, password lo
+- findOne({ email, password }) se user check karo
+- Agar user mila → res.json success
+- Agar nahi mila → res.json error ("login failed")
+
+
+--------------------------------------------------------------------------------
+TASK 03 — Students CRUD (try/catch)
+================================================================================
+
+Project: students-crud
+Port: 8003
+DB / Collection: studentsDB / students
+
+Folder:
+-------
+students-crud/
+├── package.json
+├── index.js
+├── router/
+│   └── router.js
+├── controller/
+│   └── controller.js
+└── model/
+    └── model.js
+
+Fields:
+-------
+name     (String)
+course   (String)
+email    (String)
+mobile   (String)
+
+Methods:
+--------
+GET    /get-students              → find all
+POST   /add-student               → body: name, course, email, mobile
+PUT    /update-student/:id        → params: _id , body: name, course, email, mobile
+DELETE /delete-student/:id        → params: _id
+
+Rules:
+------
+- Har function mein try/catch use karo
+- Har response mein res.json() bhejo
+- POST mein findOne({ email }) se duplicate check karo
+- Duplicate mila → error res.json
+- catch mein error res.json bhejo
+
+
+--------------------------------------------------------------------------------
+TASK 04 — Products CRUD (try/catch)
+================================================================================
+
+Project: products-crud
+Port: 8004
+DB / Collection: productsDB / products
+
+Folder:
+-------
+products-crud/
+├── package.json
+├── index.js
+├── router/
+│   └── router.js
+├── controller/
+│   └── controller.js
+└── model/
+    └── model.js
+
+Fields:
+-------
+name     (String)
+price    (String)
+category (String)
+stock    (String)
+
+Methods:
+--------
+GET    /get-products              → find all
+POST   /add-product               → body: name, price, category, stock
+PUT    /update-product/:id        → params: _id , body: name, price, category, stock
+DELETE /delete-product/:id        → params: _id
+
+Rules:
+------
+- Har function mein try/catch use karo
+- Har response mein res.json() bhejo
+- POST mein findOne({ name }) se duplicate check karo
+- Duplicate mila → error res.json
+- catch mein error res.json bhejo
+
+
+--------------------------------------------------------------------------------
+TASK 05 — Employees CRUD (try/catch)
+================================================================================
+
+Project: employees-crud
+Port: 8005
+DB / Collection: employeesDB / employees
+
+Folder:
+-------
+employees-crud/
+├── package.json
+├── index.js
+├── router/
+│   └── router.js
+├── controller/
+│   └── controller.js
+└── model/
+    └── model.js
+
+Fields:
+-------
+name       (String)
+department (String)
+salary     (String)
+city       (String)
+
+Methods:
+--------
+GET    /get-employees             → find all
+POST   /add-employee              → body: name, department, salary, city
+PUT    /update-employee/:id       → params: _id , body: name, department, salary, city
+DELETE /delete-employee/:id       → params: _id
+
+Rules:
+------
+- Har function mein try/catch use karo
+- Har response mein res.json() bhejo
+- POST mein findOne({ name }) se duplicate check karo
+- Duplicate mila → error res.json
+- catch mein error res.json bhejo
+
+
+================================================================================
+COMMON RULES
+================================================================================
+
+- Task 01 & 02 → register / login (index.js only)
+- Task 03, 04, 05 → CRUD (router / controller / model)
+- try/catch mandatory (CRUD projects)
+- res.json() mandatory
+- Duplicate check → findOne()
+- PUT / DELETE → req.params.id
+- POST → req.body
+- Notes complete karke lao
+
+
+================================================================================
+                            TOTAL: 05 APPS
+================================================================================

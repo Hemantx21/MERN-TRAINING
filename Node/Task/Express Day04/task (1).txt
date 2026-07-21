@@ -1,0 +1,418 @@
+================================================================================
+                    NODE PRACTICE TASKS — DAY 4
+              EXPRESS + MONGODB (ROUTER / CONTROLLER / MODEL)
+================================================================================
+
+INSTRUCTIONS
+------------
+1. Complete handwritten notes from class slides.
+2. Create 10 separate Express applications.
+3. Connect every app with MongoDB.
+4. Use GET, POST, PUT, DELETE methods.
+5. Use folder structure: router, controller, model.
+6. Every app must RUN successfully.
+7. Bring notes + all projects for checking.
+
+
+Setup (har project mein):
+-------------------------
+mkdir project-name
+cd project-name
+npm init -y
+npm install express mongoose
+
+
+Run:
+----
+1. Start MongoDB
+2. node index.js
+
+Test with:
+----------
+Browser / Postman / Thunder Client
+
+
+Important:
+----------
+- index.js mein sirf app setup + routes connect
+- Model → model folder
+- Controller → controller folder
+- Router → router folder
+- GET → Model.find() (sirf find all)
+- POST → data req.body se
+- PUT → _id req.params se, data req.body se
+- DELETE → _id req.params se
+
+
+How it works:
+-------------
+GET    → find all (Model.find())
+POST   → data req.body se
+PUT    → /update-xxx/:id  → req.params.id + req.body
+DELETE → /delete-xxx/:id  → req.params.id
+
+
+Folder Structure (har project):
+-------------------------------
+project-name/
+├── package.json
+├── index.js
+├── router/
+│   └── router.js
+├── controller/
+│   └── controller.js
+└── model/
+    └── model.js
+
+
+================================================================================
+TASK 01 — Students API
+================================================================================
+
+Project: students-api
+Port: 3001
+DB / Collection: studentsDB / students
+
+Folder:
+-------
+students-api/
+├── package.json
+├── index.js
+├── router/
+│   └── router.js
+├── controller/
+│   └── controller.js
+└── model/
+    └── model.js
+
+Fields:
+-------
+name     (String)
+course   (String)
+email    (String)
+mobile   (String)
+
+Methods:
+--------
+GET    /get-students              → find all
+POST   /add-student               → body: name, course, email, mobile
+PUT    /update-student/:id        → params: _id , body: name, course, email, mobile
+DELETE /delete-student/:id        → params: _id
+
+
+--------------------------------------------------------------------------------
+TASK 02 — Products API
+================================================================================
+
+Project: products-api
+Port: 3002
+DB / Collection: productsDB / products
+
+Folder:
+-------
+products-api/
+├── package.json
+├── index.js
+├── router/
+│   └── router.js
+├── controller/
+│   └── controller.js
+└── model/
+    └── model.js
+
+Fields:
+-------
+name     (String)
+price    (String)
+category (String)
+stock    (String)
+
+Methods:
+--------
+GET    /get-products              → find all
+POST   /add-product               → body: name, price, category, stock
+PUT    /update-product/:id        → params: _id , body: name, price, category, stock
+DELETE /delete-product/:id        → params: _id
+
+
+--------------------------------------------------------------------------------
+TASK 03 — Employees API
+================================================================================
+
+Project: employees-api
+Port: 3003
+DB / Collection: employeesDB / employees
+
+Folder:
+-------
+employees-api/
+├── package.json
+├── index.js
+├── router/
+│   └── router.js
+├── controller/
+│   └── controller.js
+└── model/
+    └── model.js
+
+Fields:
+-------
+name       (String)
+department (String)
+salary     (String)
+city       (String)
+
+Methods:
+--------
+GET    /get-employees             → find all
+POST   /add-employee              → body: name, department, salary, city
+PUT    /update-employee/:id       → params: _id , body: name, department, salary, city
+DELETE /delete-employee/:id       → params: _id
+
+
+--------------------------------------------------------------------------------
+TASK 04 — Books API
+================================================================================
+
+Project: books-api
+Port: 3004
+DB / Collection: booksDB / books
+
+Folder:
+-------
+books-api/
+├── package.json
+├── index.js
+├── router/
+│   └── router.js
+├── controller/
+│   └── controller.js
+└── model/
+    └── model.js
+
+Fields:
+-------
+title     (String)
+author    (String)
+price     (String)
+pages     (String)
+
+Methods:
+--------
+GET    /get-books                 → find all
+POST   /add-book                  → body: title, author, price, pages
+PUT    /update-book/:id           → params: _id , body: title, author, price, pages
+DELETE /delete-book/:id           → params: _id
+
+
+--------------------------------------------------------------------------------
+TASK 05 — Doctors API
+================================================================================
+
+Project: doctors-api
+Port: 3005
+DB / Collection: doctorsDB / doctors
+
+Folder:
+-------
+doctors-api/
+├── package.json
+├── index.js
+├── router/
+│   └── router.js
+├── controller/
+│   └── controller.js
+└── model/
+    └── model.js
+
+Fields:
+-------
+name       (String)
+specialist (String)
+hospital   (String)
+mobile     (String)
+
+Methods:
+--------
+GET    /get-doctors               → find all
+POST   /add-doctor                → body: name, specialist, hospital, mobile
+PUT    /update-doctor/:id         → params: _id , body: name, specialist, hospital, mobile
+DELETE /delete-doctor/:id         → params: _id
+
+
+--------------------------------------------------------------------------------
+TASK 06 — Orders API
+================================================================================
+
+Project: orders-api
+Port: 3006
+DB / Collection: ordersDB / orders
+
+Folder:
+-------
+orders-api/
+├── package.json
+├── index.js
+├── router/
+│   └── router.js
+├── controller/
+│   └── controller.js
+└── model/
+    └── model.js
+
+Fields:
+-------
+item     (String)
+amount   (String)
+status   (String)
+customer (String)
+
+Methods:
+--------
+GET    /get-orders                → find all
+POST   /add-order                 → body: item, amount, status, customer
+PUT    /update-order/:id          → params: _id , body: item, amount, status, customer
+DELETE /delete-order/:id          → params: _id
+
+
+--------------------------------------------------------------------------------
+TASK 07 — Movies API
+================================================================================
+
+Project: movies-api
+Port: 3007
+DB / Collection: moviesDB / movies
+
+Folder:
+-------
+movies-api/
+├── package.json
+├── index.js
+├── router/
+│   └── router.js
+├── controller/
+│   └── controller.js
+└── model/
+    └── model.js
+
+Fields:
+-------
+name     (String)
+year     (String)
+language (String)
+rating   (String)
+
+Methods:
+--------
+GET    /get-movies                → find all
+POST   /add-movie                 → body: name, year, language, rating
+PUT    /update-movie/:id          → params: _id , body: name, year, language, rating
+DELETE /delete-movie/:id          → params: _id
+
+
+--------------------------------------------------------------------------------
+TASK 08 — Cars API
+================================================================================
+
+Project: cars-api
+Port: 3008
+DB / Collection: carsDB / cars
+
+Folder:
+-------
+cars-api/
+├── package.json
+├── index.js
+├── router/
+│   └── router.js
+├── controller/
+│   └── controller.js
+└── model/
+    └── model.js
+
+Fields:
+-------
+brand  (String)
+model  (String)
+price  (String)
+color  (String)
+
+Methods:
+--------
+GET    /get-cars                  → find all
+POST   /add-car                   → body: brand, model, price, color
+PUT    /update-car/:id            → params: _id , body: brand, model, price, color
+DELETE /delete-car/:id            → params: _id
+
+
+--------------------------------------------------------------------------------
+TASK 09 — Hotels API
+================================================================================
+
+Project: hotels-api
+Port: 3009
+DB / Collection: hotelsDB / hotels
+
+Folder:
+-------
+hotels-api/
+├── package.json
+├── index.js
+├── router/
+│   └── router.js
+├── controller/
+│   └── controller.js
+└── model/
+    └── model.js
+
+Fields:
+-------
+name     (String)
+city     (String)
+price    (String)
+rooms    (String)
+
+Methods:
+--------
+GET    /get-hotels                → find all
+POST   /add-hotel                 → body: name, city, price, rooms
+PUT    /update-hotel/:id          → params: _id , body: name, city, price, rooms
+DELETE /delete-hotel/:id          → params: _id
+
+
+--------------------------------------------------------------------------------
+TASK 10 — Users API
+================================================================================
+
+Project: users-api
+Port: 3010
+DB / Collection: usersDB / users
+
+Folder:
+-------
+users-api/
+├── package.json
+├── index.js
+├── router/
+│   └── router.js
+├── controller/
+│   └── controller.js
+└── model/
+    └── model.js
+
+Fields:
+-------
+name     (String)
+email    (String)
+password (String)
+city     (String)
+
+Methods:
+--------
+GET    /get-users                 → find all
+POST   /add-user                  → body: name, email, password, city
+PUT    /update-user/:id           → params: _id , body: name, email, password, city
+DELETE /delete-user/:id           → params: _id 
+================================================================================
+                            TOTAL: 10 APPS
+================================================================================

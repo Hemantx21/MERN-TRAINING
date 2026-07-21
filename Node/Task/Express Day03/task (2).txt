@@ -1,0 +1,347 @@
+================================================================================
+                    NODE PRACTICE TASKS — DAY 3
+                  EXPRESS + MONGODB CRUD
+================================================================================
+
+INSTRUCTIONS
+------------
+1. Complete handwritten notes from class slides.
+2. Create 10 separate Express applications.
+3. All code must be written in index.js only.
+4. Connect every app with MongoDB.
+5. Use GET, POST, PUT, DELETE methods.
+ 
+
+
+Setup (har project mein):
+-------------------------
+mkdir project-name
+cd project-name
+npm init -y
+npm install express mongoose
+
+Run:
+----
+1. Start MongoDB
+2. node index.js
+
+Test with:
+----------
+Browser / Postman / Thunder Client
+
+
+Important:
+----------
+- Sab code index.js mein likho
+- MongoDB connect karo
+- Schema + Model banao
+- app.use(express.json()) use karo
+- Unique endpoints use karo
+- GET → Model.find() (sirf find all)
+- DELETE → req.query.name se karo (id se nahi)
+- PUT → req.query.name se karo
+- POST / PUT data → req.body use karo
+
+
+How it works:
+-------------
+GET    → find all (Model.find())
+POST   → data req.body se
+PUT    → name req.query se, data req.body se
+DELETE → name req.query se (id mat use karo)
+
+
+================================================================================
+TASK 01 — Students API
+================================================================================
+
+Project: students-api
+Port: 3001
+DB / Collection: studentsDB / students
+
+Folder:
+-------
+students-api/
+├── package.json
+└── index.js
+
+Fields:
+-------
+name     (String)
+course   (String)
+email    (String)
+mobile   (String)
+
+Methods:
+--------
+GET    /get-students              → find all
+POST   /add-student               → body: name, course, email, mobile
+PUT    /update-student?name=      → body: course, email, mobile
+DELETE /delete-student?name=      → name se delete
+
+
+--------------------------------------------------------------------------------
+TASK 02 — Products API
+================================================================================
+
+Project: products-api
+Port: 3002
+DB / Collection: productsDB / products
+
+Folder:
+-------
+products-api/
+├── package.json
+└── index.js
+
+Fields:
+-------
+name     (String)
+price    (String)
+category (String)
+stock    (String)
+
+Methods:
+--------
+GET    /get-products              → find all
+POST   /add-product
+PUT    /update-product?name=
+DELETE /delete-product?name=
+
+
+--------------------------------------------------------------------------------
+TASK 03 — Employees API
+================================================================================
+
+Project: employees-api
+Port: 3003
+DB / Collection: employeesDB / employees
+
+Folder:
+-------
+employees-api/
+├── package.json
+└── index.js
+
+Fields:
+-------
+name       (String)
+department (String)
+salary     (String)
+city       (String)
+
+Methods:
+--------
+GET    /get-employees             → find all
+POST   /add-employee
+PUT    /update-employee?name=
+DELETE /delete-employee?name=
+
+
+--------------------------------------------------------------------------------
+TASK 04 — Books API
+================================================================================
+
+Project: books-api
+Port: 3004
+DB / Collection: booksDB / books
+
+Folder:
+-------
+books-api/
+├── package.json
+└── index.js
+
+Fields:
+-------
+title     (String)
+author    (String)
+price     (String)
+pages     (String)
+
+Methods:
+--------
+GET    /get-books                 → find all
+POST   /add-book
+PUT    /update-book?title=
+DELETE /delete-book?title=
+
+
+--------------------------------------------------------------------------------
+TASK 05 — Doctors API
+================================================================================
+
+Project: doctors-api
+Port: 3005
+DB / Collection: doctorsDB / doctors
+
+Folder:
+-------
+doctors-api/
+├── package.json
+└── index.js
+
+Fields:
+-------
+name       (String)
+specialist (String)
+hospital   (String)
+mobile     (String)
+
+Methods:
+--------
+GET    /get-doctors               → find all
+POST   /add-doctor
+PUT    /update-doctor?name=
+DELETE /delete-doctor?name=
+
+
+--------------------------------------------------------------------------------
+TASK 06 — Orders API
+================================================================================
+
+Project: orders-api
+Port: 3006
+DB / Collection: ordersDB / orders
+
+Folder:
+-------
+orders-api/
+├── package.json
+└── index.js
+
+Fields:
+-------
+item     (String)
+amount   (String)
+status   (String)
+customer (String)
+
+Methods:
+--------
+GET    /get-orders                → find all
+POST   /add-order
+PUT    /update-order?item=
+DELETE /delete-order?item=
+
+
+--------------------------------------------------------------------------------
+TASK 07 — Movies API
+================================================================================
+
+Project: movies-api
+Port: 3007
+DB / Collection: moviesDB / movies
+
+Folder:
+-------
+movies-api/
+├── package.json
+└── index.js
+
+Fields:
+-------
+name     (String)
+year     (String)
+language (String)
+rating   (String)
+
+Methods:
+--------
+GET    /get-movies                → find all
+POST   /add-movie
+PUT    /update-movie?name=
+DELETE /delete-movie?name=
+
+
+--------------------------------------------------------------------------------
+TASK 08 — Cars API
+================================================================================
+
+Project: cars-api
+Port: 3008
+DB / Collection: carsDB / cars
+
+Folder:
+-------
+cars-api/
+├── package.json
+└── index.js
+
+Fields:
+-------
+brand  (String)
+model  (String)
+price  (String)
+color  (String)
+
+Methods:
+--------
+GET    /get-cars                  → find all
+POST   /add-car
+PUT    /update-car?model=
+DELETE /delete-car?model=
+
+
+--------------------------------------------------------------------------------
+TASK 09 — Hotels API
+================================================================================
+
+Project: hotels-api
+Port: 3009
+DB / Collection: hotelsDB / hotels
+
+Folder:
+-------
+hotels-api/
+├── package.json
+└── index.js
+
+Fields:
+-------
+name     (String)
+city     (String)
+price    (String)
+rooms    (String)
+
+Methods:
+--------
+GET    /get-hotels                → find all
+POST   /add-hotel
+PUT    /update-hotel?name=
+DELETE /delete-hotel?name=
+
+
+--------------------------------------------------------------------------------
+TASK 10 — Users API
+================================================================================
+
+Project: users-api
+Port: 3010
+DB / Collection: usersDB / users
+
+Folder:
+-------
+users-api/
+├── package.json
+└── index.js
+
+Fields:
+-------
+name     (String)
+email    (String)
+password (String)
+city     (String)
+
+Methods:
+--------
+GET    /get-users                 → find all
+POST   /add-user
+PUT    /update-user?name=
+DELETE /delete-user?name=
+
+ 
+
+================================================================================
+                            TOTAL: 10 APPS 
+================================================================================

@@ -1,0 +1,334 @@
+================================================================================
+                    NODE PRACTICE TASKS — DAY 2
+                  EXPRESS CRUD (GET POST PUT DELETE)
+================================================================================
+
+INSTRUCTIONS
+------------
+1. Complete handwritten notes from class slides.
+2. Create 10 separate Express applications.
+3. All code must be written in index.js only.
+4. Use GET, POST, PUT, DELETE methods.
+5. Send dummy data in every response.
+6. Every app must RUN successfully.
+7. Bring notes + all projects for checking.
+
+
+Setup (har project mein):
+-------------------------
+mkdir project-name
+cd project-name
+npm init -y
+npm install express
+
+Run:
+----
+node index.js
+
+Test with:
+----------
+Browser / Postman / Thunder Client
+
+
+Important:
+----------
+- Sab code index.js mein likho
+- Alag route files mat banao
+- Dummy data use karo (array / object)
+- app.use(express.json()) use karo
+- Normal unique endpoints use karo (/:id mat use karo)
+
+
+================================================================================
+TASK 01 — Students API
+================================================================================
+
+Project: students-api
+Port: 3001
+
+Folder:
+-------
+students-api/
+├── package.json
+└── index.js
+
+Methods:
+--------
+GET    /get-students
+POST   /add-student
+PUT    /update-student
+DELETE /delete-student
+
+Dummy Data:
+-----------
+{ id: 1, name: "Rahul", course: "BCA" }
+{ id: 2, name: "Priya", course: "MCA" }
+
+
+--------------------------------------------------------------------------------
+TASK 02 — Products API
+================================================================================
+
+Project: products-api
+Port: 3002
+
+Folder:
+-------
+products-api/
+├── package.json
+└── index.js
+
+Methods:
+--------
+GET    /get-products
+POST   /add-product
+PUT    /update-product
+DELETE /delete-product
+
+Dummy Data:
+-----------
+{ id: 1, name: "Laptop", price: 45000 }
+{ id: 2, name: "Mouse", price: 500 }
+
+
+--------------------------------------------------------------------------------
+TASK 03 — Employees API
+================================================================================
+
+Project: employees-api
+Port: 3003
+
+Folder:
+-------
+employees-api/
+├── package.json
+└── index.js
+
+Methods:
+--------
+GET    /get-employees
+POST   /add-employee
+PUT    /update-employee
+DELETE /delete-employee
+
+Dummy Data:
+-----------
+{ id: 1, name: "Amit", department: "IT" }
+{ id: 2, name: "Neha", department: "HR" }
+
+
+--------------------------------------------------------------------------------
+TASK 04 — Books API
+================================================================================
+
+Project: books-api
+Port: 3004
+
+Folder:
+-------
+books-api/
+├── package.json
+└── index.js
+
+Methods:
+--------
+GET    /get-books
+POST   /add-book
+PUT    /update-book
+DELETE /delete-book
+
+Dummy Data:
+-----------
+{ id: 1, title: "React Basics", author: "John" }
+{ id: 2, title: "Node Guide", author: "Smith" }
+
+
+--------------------------------------------------------------------------------
+TASK 05 — Doctors API
+================================================================================
+
+Project: doctors-api
+Port: 3005
+
+Folder:
+-------
+doctors-api/
+├── package.json
+└── index.js
+
+Methods:
+--------
+GET    /get-doctors
+POST   /add-doctor
+PUT    /update-doctor
+DELETE /delete-doctor
+
+Dummy Data:
+-----------
+{ id: 1, name: "Dr. Sharma", specialist: "Heart" }
+{ id: 2, name: "Dr. Mehta", specialist: "Skin" }
+
+
+--------------------------------------------------------------------------------
+TASK 06 — Orders API
+================================================================================
+
+Project: orders-api
+Port: 3006
+
+Folder:
+-------
+orders-api/
+├── package.json
+└── index.js
+
+Methods:
+--------
+GET    /get-orders
+POST   /add-order
+PUT    /update-order
+DELETE /delete-order
+
+Dummy Data:
+-----------
+{ id: 1, item: "Pizza", amount: 299 }
+{ id: 2, item: "Burger", amount: 149 }
+
+
+--------------------------------------------------------------------------------
+TASK 07 — Movies API
+================================================================================
+
+Project: movies-api
+Port: 3007
+
+Folder:
+-------
+movies-api/
+├── package.json
+└── index.js
+
+Methods:
+--------
+GET    /get-movies
+POST   /add-movie
+PUT    /update-movie
+DELETE /delete-movie
+
+Dummy Data:
+-----------
+{ id: 1, name: "Inception", year: 2010 }
+{ id: 2, name: "Avatar", year: 2009 }
+
+
+--------------------------------------------------------------------------------
+TASK 08 — Cars API
+================================================================================
+
+Project: cars-api
+Port: 3008
+
+Folder:
+-------
+cars-api/
+├── package.json
+└── index.js
+
+Methods:
+--------
+GET    /get-cars
+POST   /add-car
+PUT    /update-car
+DELETE /delete-car
+
+Dummy Data:
+-----------
+{ id: 1, brand: "Honda", model: "City" }
+{ id: 2, brand: "Maruti", model: "Swift" }
+
+
+--------------------------------------------------------------------------------
+TASK 09 — Hotels API
+================================================================================
+
+Project: hotels-api
+Port: 3009
+
+Folder:
+-------
+hotels-api/
+├── package.json
+└── index.js
+
+Methods:
+--------
+GET    /get-hotels
+POST   /add-hotel
+PUT    /update-hotel
+DELETE /delete-hotel
+
+Dummy Data:
+-----------
+{ id: 1, name: "Taj Hotel", city: "Mumbai" }
+{ id: 2, name: "Lemon Tree", city: "Delhi" }
+
+
+--------------------------------------------------------------------------------
+TASK 10 — Users API
+================================================================================
+
+Project: users-api
+Port: 3010
+
+Folder:
+-------
+users-api/
+├── package.json
+└── index.js
+
+Methods:
+--------
+GET    /get-users
+POST   /add-user
+PUT    /update-user
+DELETE /delete-user
+
+Dummy Data:
+-----------
+{ id: 1, name: "Ravi", email: "ravi@gmail.com" }
+{ id: 2, name: "Sneha", email: "sneha@gmail.com" }
+
+
+================================================================================
+COMMON RULES
+================================================================================
+
+- 10 alag projects banao
+- Sirf index.js mein code likho
+- Har project mein GET, POST, PUT, DELETE banao
+- Endpoints unique rakho
+- /:id mat use karo
+- Diya hua dummy data use karo
+- Different PORT use karo
+- Notes complete karke lao
+
+
+================================================================================
+VIVA
+================================================================================
+
+1. What is GET method?
+2. What is POST method?
+3. What is PUT method?
+4. What is DELETE method?
+5. What is express.json()?
+6. What is req.body?
+7. Difference between PUT and POST?
+8. What is res.json()?
+9. How do you test POST/PUT/DELETE?
+10. Why do we use unique endpoints?
+
+
+================================================================================
+                            TOTAL: 10 APPS + NOTES
+================================================================================
